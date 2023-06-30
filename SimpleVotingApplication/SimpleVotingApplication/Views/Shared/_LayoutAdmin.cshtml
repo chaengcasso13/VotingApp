@@ -1,0 +1,144 @@
+﻿@inject SignInManager<IdentityUser> signInManager;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SimpleVotingApplication</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/GlassMorphic.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SimpleVotingApplication.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Voting Application</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto">
+                        
+
+                        <!--IF SIGNED IN-->
+                        @if (signInManager.IsSignedIn(User))
+                        {@*
+                            <li class="nav-item">
+                                <a class="nav-link" asp-action="Index" asp-controller="Home">
+                                    Home
+                                </a>
+                            </li>*@
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-action="TallyVotes" asp-controller="VotingTransaction">
+                                    Election Status
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-action="Candidates" asp-controller="Candidate">Candidates</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Voters</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" asp-action="ViewVoters" asp-controller="Voter">View Voters</a>
+                                    <a class="dropdown-item" asp-action="DeleteVoters" asp-controller="Voter">Delete Voters</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Election</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" asp-action="AddElection" asp-controller="Election">Add Election Date</a>
+                                    <a class="dropdown-item" asp-action="ViewElection" asp-controller="Election">View Elections</a>
+                                </div>
+                            </li>@*
+                            <li class="nav-item">
+                                <a class="nav-link" asp-action="Transactions" asp-controller="Candidate">Transactions</a>
+                            </li>*@
+
+                            <li class="nav-item">
+                                <form class="nav-item" asp-action="Logout" asp-controller="Login">
+                                    <input type="submit" value="Logout @User.Identity.Name" class="nav-item" />
+                                    @*<a class="nav-link" asp-action="logout" asp-controller="Login">
+                                Logout @User.Identity.Name
+                                </a>*@
+                                </form>
+                                @*<a class="nav-link" asp-action="Logout" asp-controller="Login">
+                                        Logout @User.Identity.Name
+                                </a>*@
+                            </li>
+                        }
+                        else
+                        {
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="VotingTransaction" asp-action="TallyVotes">Election Status</a>
+                            <a class="nav-link" asp-action="Vote" asp-controller="VotingTransaction">Vote</a>
+                            <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Register">Register</a>
+                            <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Login">Login</a>
+
+                            @*<a class="nav-link" asp-area="" asp-controller="Index" asp-action="Home">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="VotingTransaction" asp-action="TallyVotes">Election Status</a>
+                            <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Register">Register</a>
+                            <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Login">Login</a>*@
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        @*<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SimpleVotingApplication</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+
+                        <!--IF SIGNED IN-->
+                        @if (signInManager.IsSignedIn(User))
+                        {
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Candidates</a>
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Elections</a>
+                            <li class="nav-link">
+                                <form method="post" asp-action="logout" asp-controller="Login">
+                                    <button type="submit" class="nav-link btn btn-link" style="width:auto;">
+                                        Logout @User.Identity.Name
+                                    </button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Register">Register</a>
+                            <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Login">Login</a>
+                        }
+                        <!--IF SIGNED IN END-->
+                    </ul>
+                </div>
+            </div>
+        </nav>*@
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @*<footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - SimpleVotingApplication - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

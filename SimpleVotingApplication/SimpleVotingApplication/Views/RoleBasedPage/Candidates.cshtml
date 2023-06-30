@@ -1,0 +1,53 @@
+﻿@model IEnumerable<SimpleVotingApplication.Models.CandidateModel>
+
+@{
+    ViewData["Title"] = "Candidates";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<!--TODO: as;lk-->
+<h1>Candidates</h1>
+<p>
+    <a asp-controller="Candidate" asp-action="CandidateForm">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CandidateFname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CandidateMname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CandidateLname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfBirth)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CandidateFname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CandidateMname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CandidateLname)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOfBirth)
+                </td>
+            <td>
+                    <a class="btn btn-primary" asp-route-id="@item.CandidateID" asp-action="Edit">Edit</a>
+                <a class="btn btn-info"asp-action="Details" asp-route-id="@item.CandidateID">Details</a>
+                <a class="btn btn-warning" asp-action="Delete" asp-route-id="@item.CandidateID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

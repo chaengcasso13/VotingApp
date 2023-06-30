@@ -1,0 +1,117 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SimpleVotingApplication
+build_property.RootNamespace = SimpleVotingApplication
+build_property.ProjectDir = C:\Users\lares User\Desktop\VotingApp\VotingApp\SimpleVotingApplication\SimpleVotingApplication\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\lares User\Desktop\VotingApp\VotingApp\SimpleVotingApplication\SimpleVotingApplication
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Admin/CreateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Candidate/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Candidate/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Election/AddElection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Rpb25cQWRkRWxlY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Election/DeleteElection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Rpb25cRGVsZXRlRWxlY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Election/EditElection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Rpb25cRWRpdEVsZWN0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Election/ViewElection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Rpb25cVmlld0VsZWN0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Login/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/RoleBasedPage/CandidateForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZUJhc2VkUGFnZVxDYW5kaWRhdGVGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/RoleBasedPage/Candidates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZUJhc2VkUGFnZVxDYW5kaWRhdGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/RoleBasedPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZUJhc2VkUGFnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Voter/DeleteVoters.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90ZXJcRGVsZXRlVm90ZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Voter/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90ZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Voter/ViewVoters.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90ZXJcVmlld1ZvdGVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/VotingTransaction/TallyVotes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90aW5nVHJhbnNhY3Rpb25cVGFsbHlWb3Rlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/VotingTransaction/Vote.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm90aW5nVHJhbnNhY3Rpb25cVm90ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lares User/Desktop/VotingApp/VotingApp/SimpleVotingApplication/SimpleVotingApplication/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2k4i4pgsnu

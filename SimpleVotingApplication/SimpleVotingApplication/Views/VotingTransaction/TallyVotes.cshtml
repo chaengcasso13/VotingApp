@@ -1,0 +1,35 @@
+﻿@model List<SimpleVotingApplication.Models.VotingTransactionsModel>
+
+@{
+    ViewData["Title"] = "TallyVotes";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 class="mt-3">Current Votes</h1>
+
+<div>
+    <ul class="list-group">
+    @{
+        var candidateModel = (List<CandidateModel>)ViewBag.CandidateVotes;
+        foreach(var candidate in candidateModel)
+        {
+            var numberOfAllVotes = Model.Count();
+            var numberOfVotes = @Model.Count(x => x.CandidateID == candidate.CandidateID);
+            var percentageV = ((double)numberOfVotes / numberOfAllVotes) * 100;
+            
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                @candidate.FullName
+                <span class="badge bg-primary rounded-pill">@numberOfVotes out of @numberOfAllVotes Votes<span>
+            </li>
+
+            <div class="progress mx-3 mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" ariavaluenow="@percentageV" aria-valuemin="0" aria-valuemax="100" style="width:@percentageV.ToString("0.00")%;"></div>
+            </div>
+        }
+    }
+    </ul>
+</div>
+<div class="text-center ">
+    @*<a asp-action="Edit" asp-route-id="@Model?.TransactionID">Edit</a> |
+    <a class="btn btn-outline-light mt-3" asp-action="Index">Back to List</a>*@
+</div>

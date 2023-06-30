@@ -1,0 +1,14 @@
+﻿@*@{
+    var verifyEmail = dbContext.AdminAccounts.FirstOrDefault(x => x.Username == Model.Email);
+    if (verifyEmail != null)
+    {
+        Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}*@
+@{
+    Layout = "_Layout";
+}

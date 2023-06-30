@@ -1,0 +1,117 @@
+﻿@model SimpleVotingApplication.Models.Login_Account.RegisterUserModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+<div class="card border-dark mb-3">
+    <div class="card-body">
+        <div class="">
+            <h1>Registration Form</h1>
+        </div>
+        @*<h4 class="card-title">Light card title</h4>*@
+        <p class="card-text">
+            <form asp-action="Register">
+                <div class="row g-3">
+                    <div class="form-group col-lg-3">
+                        <label asp-for="LastName" class="control-label"></label>
+                        <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label asp-for="FirstName" class="control-label"></label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label asp-for="MiddleName" class="control-label"></label>
+                        <input asp-for="MiddleName" class="form-control" />
+                        <span asp-validation-for="MiddleName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label asp-for="Sex" class="control-label"></label>
+                        <input asp-for="Sex" class="form-control" />
+                        <span asp-validation-for="Sex" class="text-danger"></span>
+                    </div>
+                </div>
+                
+                <div class="row g-3">
+                    <div class="form-group col-lg-3">
+                        <label asp-for="DateOfBirth" class="control-label"></label>
+                        <input asp-for="DateOfBirth" class="form-control" />
+                        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label asp-for="PlaceOfBirth" class="control-label"></label>
+                        <input asp-for="PlaceOfBirth" class="form-control" />
+                        <span asp-validation-for="PlaceOfBirth" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label asp-for="CivilStatus" class="control-label"></label>
+                        <input asp-for="CivilStatus" class="form-control" />
+                        <span asp-validation-for="CivilStatus" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label asp-for="Citizenship" class="control-label"></label>
+                        <input asp-for="Citizenship" class="form-control" />
+                        <span asp-validation-for="Citizenship" class="text-danger"></span>
+                    </div>
+                </div>
+                
+                <div class="row g-3">
+                    <div class="form-group col-lg-3">
+                        <label asp-for="Province" class="control-label"></label>
+                        <input asp-for="Province" class="form-control" />
+                        <span asp-validation-for="Province" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label asp-for="City" class="control-label"></label>
+                        <input asp-for="City" class="form-control" />
+                        <span asp-validation-for="City" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label asp-for="Barangay" class="control-label"></label>
+                        <input asp-for="Barangay" class="form-control" />
+                        <span asp-validation-for="Barangay" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label asp-for="Street" class="control-label"></label>
+                        <input asp-for="Street" class="form-control" />
+                        <span asp-validation-for="Street" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="form-group col-lg-4">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label asp-for="Password" class="control-label"></label>
+                        <input asp-for="Password" class="form-control" />
+                        <pan asp-validation-for="Password" class="text-danger"></pan>
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label asp-for="ConfirmPassword" class="control-label"></label>
+                        <input asp-for="ConfirmPassword" class="form-control" />
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group text-center mt-3">
+                    <input type="submit" value="Register" class="btn btn-primary" />
+                    <a asp-action="Login" class="btn btn-outline-light">Back to Log in page</a>
+                </div>
+            </form>
+            <div>
+            </div>
+        </p>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
